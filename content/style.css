@@ -1,0 +1,27 @@
+﻿body {
+        background-color: #e2e2e2;
+    }
+
+    #wrapper {
+        width: 600px;
+        margin: auto;
+        text-align: center;
+    }
+
+    #tbl {
+        width: 100%;
+    }
+
+        #tbl td {
+            height: 100px;
+            text-align: center;
+            background-color: gray;
+        }
+
+    .red {
+        background-color: red;
+    }
+
+    .blue {
+        background-color: blue;
+    }
