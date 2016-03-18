@@ -30,8 +30,42 @@ function clickSection(section) {
     if (typeof end != 'undefined' && end.win == true) {
 
         var person = User == 0 ? 'Red' : 'Blue';
-        alert(person + ' Win!\nTry again');
-
+        
+		if(end.item == 'row1')
+		{
+			$('#i1,#i2,#i3').css('background-color','gold');
+		}
+		else if(end.item == 'row2')
+		{
+			$('#i4,#i5,#i6').css('background-color','gold');
+		}
+		else if(end.item == 'row3')
+		{
+			$('#i7,#i8,#i9').css('background-color','gold');
+		}
+		else if(end.item == 'col1')
+		{
+			$('#i1,#i4,#i7').css('background-color','gold');
+		}
+		else if(end.item == 'col2')
+		{
+			$('#i2,#i5,#i8').css('background-color','gold');
+		}
+		else if(end.item == 'col3')
+		{
+			$('#i3,#i6,#i9').css('background-color','gold');
+		}
+		else if(end.item == 'x1')
+		{
+			$('#i1,#i5,#i9').css('background-color','gold');
+		}
+		else if(end.item == 'x2')
+		{
+			$('#i3,#i5,#i7').css('background-color','gold');
+		}
+		
+		alert(person + ' Win!\nTry again');
+		
         selectedSections = [];
         debugger;
         var data = $("table td").siblings();
